@@ -9,7 +9,7 @@
 }
 
 body {
-   background: $background-color url('../../images/pattern-background-mobile.svg') no-repeat top center;
+   background: $background-color url('../images/pattern-background-mobile.svg') no-repeat top center;
    color: $text-and-hover-color;
    display: grid;
    font-family: $font-family;
@@ -19,6 +19,6 @@ body {
    place-content: center;
 
    @media screen and (min-width: 376px) {
-      background: $background-color url('../../images/pattern-background-desktop.svg') no-repeat top center;
+      background: $background-color url('../images/pattern-background-desktop.svg') no-repeat top center;
    }
 }

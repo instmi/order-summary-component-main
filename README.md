@@ -1,4 +1,4 @@
-# 💻 Frontend Mentor - Oder Summary Component Main
+# 💻 Frontend Mentor - Order Summary Component Main
 
 ![Prévia da minha resolução para o desafio, página de avaliação](./design/screenshot.png)
 

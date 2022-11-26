@@ -9,7 +9,7 @@
 }
 
 body {
-  background: hsl(225deg, 100%, 94%) url("../../images/pattern-background-mobile.svg") no-repeat top center;
+  background: hsl(225deg, 100%, 94%) url("../images/pattern-background-mobile.svg") no-repeat top center;
   color: hsl(224deg, 23%, 55%);
   display: grid;
   font-family: "Red Hat Display", sans-serif;
@@ -20,7 +20,7 @@ body {
 }
 @media screen and (min-width: 376px) {
   body {
-    background: hsl(225deg, 100%, 94%) url("../../images/pattern-background-desktop.svg") no-repeat top center;
+    background: hsl(225deg, 100%, 94%) url("../images/pattern-background-desktop.svg") no-repeat top center;
   }
 }
 
