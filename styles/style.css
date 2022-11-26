@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(225deg, 100%, 94%) url("../../images/pattern-background-mobile.svg") no-repeat top center;
+  color: hsl(224deg, 23%, 55%);
+  display: grid;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
+  place-content: center;
+}
+@media screen and (min-width: 376px) {
+  body {
+    background: hsl(225deg, 100%, 94%) url("../../images/pattern-background-desktop.svg") no-repeat top center;
+  }
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 2.5rem 1.25rem 0 hsl(225deg, 81%, 90%);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 4.5rem auto;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  width: 87vw;
+}
+@media screen and (min-width: 64rem) {
+  .card {
+    padding-bottom: 1.5rem;
+    width: 51vw;
+  }
+}
+@media screen and (min-width: 64rem) and (min-width: 90rem) {
+  .card {
+    width: 31vw;
+  }
+}
+.card__hero {
+  border-radius: 1.2rem 1.2rem 0rem 0;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.card__title {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 1.375rem;
+  font-weight: 900;
+  margin: 2rem 0 1rem 0;
+}
+@media screen and (min-width: 64rem) {
+  .card__title {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+  }
+}
+.card__paragraph {
+  line-height: 1.5rem;
+  margin: 0 2rem;
+}
+@media screen and (min-width: 64rem) {
+  .card__paragraph {
+    font-size: 1.0625rem;
+    line-height: 1.6rem;
+    margin: 0 3.5rem;
+  }
+}
+.card__plan {
+  align-items: center;
+  background-color: hsl(230deg, 75%, 98%);
+  border-radius: 0.75rem;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-content: space-between;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 64rem) {
+  .card__plan {
+    font-size: 1rem;
+    margin-left: 2.8125rem;
+    margin-right: 2.8125rem;
+    padding: 1.5rem;
+  }
+}
+.card__plan > div {
+  align-items: center;
+  display: flex;
+}
+.card__plan > div img {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 64rem) {
+  .card__plan > div img {
+    margin-right: 1.125rem;
+  }
+}
+.card__plan > div p:first-child {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 0.25rem;
+}
+.card__plan a {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 64rem) {
+  .card__plan a {
+    font-size: 0.9rem;
+  }
+  .card__plan a:hover {
+    color: hsl(224deg, 23%, 55%);
+    cursor: pointer;
+  }
+}
+.card__button {
+  background-color: hsl(245deg, 75%, 52%);
+  border: 0.0625rem solid hsl(245deg, 75%, 52%);
+  border-radius: 0.75rem;
+  box-shadow: 0 1.25 1.25rem 0 hsl(225deg, 81%, 90%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  margin: 0 1.5rem;
+  padding: 0.9rem 1rem;
+  transition: 0.5s;
+}
+@media screen and (min-width: 64rem) {
+  .card__button {
+    margin: 0.75rem 2.8125rem 0 2.8125rem;
+  }
+  .card__button:hover {
+    background-color: hsl(224deg, 23%, 55%);
+    border-color: hsl(224deg, 23%, 55%);
+    color: hsl(0deg, 0%, 100%);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+.card__cancel {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 0.95rem;
+  font-weight: 900;
+  margin: 1.3rem 0 1rem 0;
+  text-decoration: none;
+}
+@media screen and (min-width: 64rem) {
+  .card__cancel {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,145 @@
+@import '../abstract/variables';
+
+.card {
+   background-color: $card-background-color;
+   border-radius: 1.2rem; 
+   box-shadow: 0 2.5rem 1.25rem 0 $shadow-color;
+   display: flex;
+   flex-direction: column;
+   height: auto;
+   margin: 4.5rem auto;
+   padding-bottom: 0.8rem;
+   text-align: center;
+   width: 87vw;
+
+   @media screen and (min-width: 64rem) {
+      padding-bottom: 1.5rem;
+      width: 51vw;
+      
+      @media screen and (min-width: 90rem) { 
+         width: 31vw;
+      }
+   }
+
+   &__hero {
+      border-radius: 1.2rem 1.2rem 0rem 0; // esquerda-topo direita-topo esquerda-inferior direita-inferior 
+      display: block;
+      height: auto;
+      width: 100%;
+   }
+
+   &__title {
+      color: $heading-color;
+      font-size: 1.375rem;
+      font-weight: $font-bolder;
+      margin: 2rem 0 1rem 0;
+
+      @media screen and (min-width: 64rem) {
+         font-size: 1.75rem;
+         margin-top: 3rem;
+      }
+   }
+
+   &__paragraph {
+      line-height: 1.5rem;
+      margin: 0 2rem;
+
+      @media screen and (min-width: 64rem) {
+         font-size: 1.0625rem;
+         line-height: 1.6rem;
+         margin: 0 3.5rem;
+      }
+   }
+
+   &__plan {
+      align-items: center;
+      background-color: $box-background-color;
+      border-radius: 0.75rem;
+      display: flex;
+      font-size: 0.9rem;
+      font-weight: $font-bold;
+      justify-content: space-between;
+      margin: 1.5rem;
+      padding: 1rem;
+
+      @media screen and (min-width: 64rem) {
+         font-size: 1rem;
+         margin-left: 2.8125rem;
+         margin-right: 2.8125rem;
+         padding: 1.5rem;
+      }
+
+      > div {
+         align-items: center;
+         display: flex;
+
+         img {
+            margin-right: 1rem;
+
+            @media screen and (min-width: 64rem) {
+               margin-right: 1.125rem;
+            }
+         }
+
+         p:first-child {
+            color: $heading-color;
+            font-weight: $font-bolder;
+            margin-bottom: 0.25rem;
+         }
+      }
+
+      a {
+         color: $button-color;
+         font-size: 0.8rem;
+         font-weight: $font-bold;
+
+         @media screen and (min-width: 64rem) {
+            font-size: 0.9rem;
+
+            &:hover {
+               color: $text-and-hover-color;
+
+               @include cursor;
+            }
+         }
+      }
+   }
+
+   &__button {
+      background-color: $button-color;
+      border: 0.0625rem solid $button-color;
+      border-radius: 0.75rem;
+      box-shadow: 0 1.25 1.25rem 0 hsl(225deg 81% 90%);;
+      color: $card-background-color;
+      font-family: $font-family;
+      font-weight: $font-bold;
+      margin: 0 1.5rem;
+      padding: 0.9rem 1rem;
+      transition: 0.5s;
+
+      @media screen and (min-width: 64rem) {
+         margin: 0.75rem 2.8125rem 0 2.8125rem;
+
+         &:hover {
+            background-color: $text-and-hover-color;
+            border-color: $text-and-hover-color;
+            color: $card-background-color;
+            transition: 0.5s;
+
+            @include cursor;
+         }
+      }
+   }
+
+   &__cancel {
+      color: $text-and-hover-color;
+      font-size: 0.95rem;
+      font-weight: $font-bolder;
+      margin: 1.3rem 0 1rem 0;
+      text-decoration: none;
+
+      @media screen and (min-width: 64rem) {
+         margin-top: 2rem;
+      }
+   }
+}
